@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body class="m-0">
+    <div
+      class="min-h-screen px-20 bg-[url('images/image.png')] bg-center bg-cover py-5 relative"
+    >
+      <nav class="flex items-center justify-between">
+        <!-- app logo -->
+        <img src="images/logo.png" class="w-40 cursor-pointer" />
+
+        <!-- app navbar -->
+        <ul class="text-white flex flex-row gap-20">
+          <li class="">
+            <a
+              href="#"
+              class="inline-block pb-1 border-b-2 border-transparent hover:border-white transition-all duration-300"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="inline-block pb-1 border-b-2 border-transparent hover:border-white transition-all duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="inline-block pb-1 border-b-2 border-transparent hover:border-white transition-all duration-300"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="inline-block pb-1 border-b-2 border-transparent hover:border-white transition-all duration-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- app cart icon -->
+        <img src="images/cart.png" class="w-7 cursor-pointer" />
+      </nav>
+
+      <div class="text-white mt-45 max-w-xl">
+        <h1 class="text-6xl font-semibold leading-normal">
+          Groceries <br />
+          delivery in <span class="font-light">15 mins</span>
+        </h1>
+        <p>
+          Grocify offer a wide range of products, including fresh products,
+          meats, dairy, baked goods and non-perishable items.
+        </p>
+
+        <div class="mt-10">
+          <a
+            href="#"
+            class="bg-yellow-300 py-3 px-8 rounded-2xl text-black font-medium hover:bg-transparent hover:text-white duration-300 hover:border border-yellow-300 border border-transparent mr-8"
+            >Order Now
+          </a>
+          <a
+            href="#"
+            class="inline-block pb-2 border-b-[0.5px] border-transparent hover:border-white transition-all duration-400"
+            >Download App
+            <span class="text-3xl inline-block align-middle">&#8595;</span></a
+          >
+        </div>
+      </div>
+
+      <img
+        src="images/grocery-image.png"
+        class="w-full xl:w-1/2 xl:absolute bottom-0 right-20"
+      />
+    </div>
+  </body>
+</html>
